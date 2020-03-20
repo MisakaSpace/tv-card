@@ -59,35 +59,27 @@ class TVCardServices extends LitElement {
               icon=""
               title=""
             ></paper-icon-button>
-            <paper-icon-button
-              .action="${"power"}"
-              @click="${this.handleActionClick}"
-              icon="mdi:power"
-              title="Power"
-            ></paper-icon-button>
-
           </div>
+          
           <div class="row">
             <paper-icon-button
-              .action="${"back"}"
+              .action="${"source_tv"}"
               @click="${this.handleActionClick}"
               icon="mdi:arrow-left"
-              title="Back"
+              title="TV"
             ></paper-icon-button>
             <paper-icon-button
-              .action="${"source"}"
+              .action="${"source_smart"}"
               @click="${this.handleActionClick}"
-              icon="mdi:video-input-hdmi"
-              title="Source"
+              icon="mdi:television-classic"
+              title="Smart"
             ></paper-icon-button>
             <paper-icon-button
-              .action="${"home"}"
+              .action="${""}"
               @click="${this.handleActionClick}"
-              icon="mdi:home"
-              title="Home"
+              icon=""
+              title=""
             ></paper-icon-button>
-
-
           </div>
 
           <div class="row">
