@@ -60,10 +60,10 @@ class TVCardServices extends LitElement {
               title=""
             ></paper-icon-button>            
             <paper-icon-button
-              .action="${""}"
+              .action="${"mute"}"
               @click="${this.handleActionClick}"
-              icon=""
-              title=""
+              icon="mdi:volume-mute"
+              title="Mute"
             ></paper-icon-button>
           </div>
           
@@ -74,6 +74,7 @@ class TVCardServices extends LitElement {
               icon="mdi:television-classic"
               title="TV"
             ></paper-icon-button>
+            
             <paper-icon-button
               .action="${"source_smart"}"
               @click="${this.handleActionClick}"
@@ -90,53 +91,25 @@ class TVCardServices extends LitElement {
 
           <div class="row">
             <paper-icon-button
-              .action="${"channelup"}"
+              .action="${"volume_up"}"
               @click="${this.handleActionClick}"
-              icon="mdi:arrow-up"
-              title="Channelup"
+              icon="mdi:volume_down"
+              title="Down"
             ></paper-icon-button>
-            <paper-icon-button
-              .action="${"info"}"
-              @click="${this.handleActionClick}"
-              icon="mdi:television-guide"
-              title="Guide"
-            ></paper-icon-button>
-            <paper-icon-button
-              .action="${"channeldown"}"
-              @click="${this.handleActionClick}"
-              icon="mdi:arrow-down"
-              title="Channeldown"
-            ></paper-icon-button>
-
           </div>
 
-          <div class="row">
             <paper-icon-button
-              .action="${"up"}"
+              .action="${""}"
               @click="${this.handleActionClick}"
-              icon="mdi:chevron-up"
+              icon=""
+              title=""
+            ></paper-icon-button>
+
+            <paper-icon-button
+              .action="${"volume_up"}"
+              @click="${this.handleActionClick}"
+              icon="mdi:volume_up"
               title="Up"
-            ></paper-icon-button>
-          </div>
-
-          <div class="row">
-            <paper-icon-button
-              .action="${"left"}"
-              @click="${this.handleActionClick}"
-              icon="mdi:chevron-left"
-              title="Left"
-            ></paper-icon-button>
-            <paper-icon-button
-              .action="${"select"}"
-              @click="${this.handleActionClick}"
-              icon="mdi:checkbox-blank-circle"
-              title="Select"
-            ></paper-icon-button>
-            <paper-icon-button
-              .action="${"right"}"
-              @click="${this.handleActionClick}"
-              icon="mdi:chevron-right"
-              title="Right"
             ></paper-icon-button>
           </div>
 
@@ -253,7 +226,7 @@ class TVCardServices extends LitElement {
       "source_smart",
       "volume_up",
       "volume_down",
-      "volume_mute",
+      "mute",
       "back",
 	  "source",
       "info",
