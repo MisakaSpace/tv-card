@@ -249,6 +249,8 @@ class TVCardServices extends LitElement {
   handleActionClick(e) {
     const custom_services = [
       "power",
+      "source_tv",
+      "source_smart",
       "volume_up",
       "volume_down",
       "volume_mute",
