@@ -110,36 +110,6 @@ class TVCardServices extends LitElement {
               title="Volume +"
             ></paper-icon-button>
           </div>
-
-          ${
-            this._config.tv ||
-            this._config.volume_up ||
-            this._config.volume_down ||
-            this._config.volume_mute
-              ? html`
-                  <div class="row">
-                    <paper-icon-button
-                      .action="${"volume_mute"}"
-                      @click="${this.handleActionClick}"
-                      icon="mdi:volume-mute"
-                      title="Volume Mute"
-                    ></paper-icon-button>
-                    <paper-icon-button
-                      .action="${"volume_down"}"
-                      @click="${this.handleActionClick}"
-                      icon="mdi:volume-minus"
-                      title="Volume Down"
-                    ></paper-icon-button>
-                    <paper-icon-button
-                      .action="${"volume_up"}"
-                      @click="${this.handleActionClick}"
-                      icon="mdi:volume-plus"
-                      title="Volume Up"
-                    ></paper-icon-button>
-                  </div>
-                `
-              : ""
-          }
         </div>
       </ha-card>
     `;
@@ -194,21 +164,7 @@ class TVCardServices extends LitElement {
       "source_smart",
       "volume_up",
       "volume_down",
-      "mute",
-      "back",
-	  "source",
-      "info",
-      "home",
-	  "channelup",
-	  "channeldown",
-      "up",
-      "left",
-      "select",
-      "right",
-      "down",
-      "reverse",
-      "play",
-	  "forward"
+      "mute"
     ];
 
     if (
