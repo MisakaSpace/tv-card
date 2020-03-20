@@ -96,7 +96,6 @@ class TVCardServices extends LitElement {
               icon="mdi:volume-medium"
               title="Down"
             ></paper-icon-button>
-          </div>
 
             <paper-icon-button
               .action="${""}"
