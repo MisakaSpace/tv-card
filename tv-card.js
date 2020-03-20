@@ -58,6 +58,12 @@ class TVCardServices extends LitElement {
               @click="${this.handleActionClick}"
               icon=""
               title=""
+            ></paper-icon-button>            
+            <paper-icon-button
+              .action="${""}"
+              @click="${this.handleActionClick}"
+              icon=""
+              title=""
             ></paper-icon-button>
           </div>
           
@@ -65,13 +71,13 @@ class TVCardServices extends LitElement {
             <paper-icon-button
               .action="${"source_tv"}"
               @click="${this.handleActionClick}"
-              icon="mdi:arrow-left"
+              icon="mdi:television-classic"
               title="TV"
             ></paper-icon-button>
             <paper-icon-button
               .action="${"source_smart"}"
               @click="${this.handleActionClick}"
-              icon="mdi:television-classic"
+              icon="mdi:television-guide"
               title="Smart"
             ></paper-icon-button>
             <paper-icon-button
