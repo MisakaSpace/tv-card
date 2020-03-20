@@ -178,7 +178,9 @@ class TVCardServices extends LitElement {
       "source_smart",
       "volume_up",
       "volume_down",
-      "mute"
+      "mute",
+      "size",
+      "brightness",
     ];
 
     if (
