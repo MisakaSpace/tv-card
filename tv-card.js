@@ -104,9 +104,10 @@ class TVCardServices extends LitElement {
               title="Volume +"
             ></paper-icon-button>
           </div>
+          
           <div class="row">
             <paper-icon-button
-              .action="${"size"}"
+              .action="${"screen_size"}"
               @click="${this.handleActionClick}"
               icon="mdi:resize"
               title="Size"
@@ -118,7 +119,7 @@ class TVCardServices extends LitElement {
               title=""
             ></paper-icon-button>
             <paper-icon-button
-              .action="${"brightness"}"
+              .action="${"screen_brightness"}"
               @click="${this.handleActionClick}"
               icon="mdi:brightness-6"
               title="Brightness"
@@ -179,8 +180,8 @@ class TVCardServices extends LitElement {
       "volume_up",
       "volume_down",
       "mute",
-      "size",
-      "brightness",
+      "screen_size",
+      "screen_brightness",
     ];
 
     if (
