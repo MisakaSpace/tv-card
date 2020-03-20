@@ -81,6 +81,7 @@ class TVCardServices extends LitElement {
               icon="mdi:television-guide"
               title="Smart"
             ></paper-icon-button>
+            
             <paper-icon-button
               .action="${""}"
               @click="${this.handleActionClick}"
@@ -94,51 +95,19 @@ class TVCardServices extends LitElement {
               .action="${"volume_up"}"
               @click="${this.handleActionClick}"
               icon="mdi:volume-medium"
-              title="Down"
+              title="Volume -"
             ></paper-icon-button>
-
             <paper-icon-button
               .action="${""}"
               @click="${this.handleActionClick}"
               icon=""
               title=""
             ></paper-icon-button>
-
             <paper-icon-button
-              .action="${"volume_up"}"
+              .action="${"volume_down"}"
               @click="${this.handleActionClick}"
               icon="mdi:volume-high"
-              title="Up"
-            ></paper-icon-button>
-          </div>
-
-          <div class="row">
-            <paper-icon-button
-              .action="${"down"}"
-              @click="${this.handleActionClick}"
-              icon="mdi:chevron-down"
-              title="Down"
-            ></paper-icon-button>
-          </div>
-
-          <div class="row">
-            <paper-icon-button
-              .action="${"reverse"}"
-              @click="${this.handleActionClick}"
-              icon="mdi:rewind"
-              title="Rewind"
-            ></paper-icon-button>
-            <paper-icon-button
-              .action="${"play"}"
-              @click="${this.handleActionClick}"
-              icon="mdi:play-pause"
-              title="Play/Pause"
-            ></paper-icon-button>
-            <paper-icon-button
-              .action="${"forward"}"
-              @click="${this.handleActionClick}"
-              icon="mdi:fast-forward"
-              title="Fast-Forward"
+              title="Volume +"
             ></paper-icon-button>
           </div>
 
