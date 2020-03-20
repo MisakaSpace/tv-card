@@ -81,18 +81,12 @@ class TVCardServices extends LitElement {
               icon="mdi:television-guide"
               title="Smart"
             ></paper-icon-button>
-            
-            <paper-icon-button
-              .action="${""}"
-              @click="${this.handleActionClick}"
-              icon=""
-              title=""
-            ></paper-icon-button>
+
           </div>
 
           <div class="row">
             <paper-icon-button
-              .action="${"volume_up"}"
+              .action="${"volume_down"}"
               @click="${this.handleActionClick}"
               icon="mdi:volume-medium"
               title="Volume -"
@@ -104,7 +98,7 @@ class TVCardServices extends LitElement {
               title=""
             ></paper-icon-button>
             <paper-icon-button
-              .action="${"volume_down"}"
+              .action="${"volume_up"}"
               @click="${this.handleActionClick}"
               icon="mdi:volume-high"
               title="Volume +"
