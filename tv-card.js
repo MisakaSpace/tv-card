@@ -93,7 +93,7 @@ class TVCardServices extends LitElement {
             <paper-icon-button
               .action="${"volume_up"}"
               @click="${this.handleActionClick}"
-              icon="mdi:volume_down"
+              icon="mdi:volume-medium"
               title="Down"
             ></paper-icon-button>
           </div>
@@ -108,7 +108,7 @@ class TVCardServices extends LitElement {
             <paper-icon-button
               .action="${"volume_up"}"
               @click="${this.handleActionClick}"
-              icon="mdi:volume_up"
+              icon="mdi:volume-high"
               title="Up"
             ></paper-icon-button>
           </div>
