@@ -104,6 +104,26 @@ class TVCardServices extends LitElement {
               title="Volume +"
             ></paper-icon-button>
           </div>
+          <div class="row">
+            <paper-icon-button
+              .action="${"size"}"
+              @click="${this.handleActionClick}"
+              icon="mdi:resize"
+              title="Size"
+            ></paper-icon-button>
+            <paper-icon-button
+              .action="${""}"
+              @click="${this.handleActionClick}"
+              icon=""
+              title=""
+            ></paper-icon-button>
+            <paper-icon-button
+              .action="${"brightness"}"
+              @click="${this.handleActionClick}"
+              icon="mdi:brightness-6"
+              title="Brightness"
+            ></paper-icon-button>
+          </div>
         </div>
       </ha-card>
     `;
