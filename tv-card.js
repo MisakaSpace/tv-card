@@ -43,89 +43,71 @@ class TVCardServices extends LitElement {
     return html`
       ${this.renderStyle()}
       <ha-card .header="${this._config.name}">
-          <div class="row">
-
-          </div>
-          <div class="row">
-            <paper-icon-button
-              .action="${"power"}"
-              @click="${this.handleActionClick}"
-              icon="mdi:power"
-              title="Power"
-            ></paper-icon-button>
-            <paper-icon-button
-              .action="${""}"
-              @click="${this.handleActionClick}"
-              icon=""
-              title=""
-            ></paper-icon-button>            
-            <paper-icon-button
-              .action="${"mute"}"
-              @click="${this.handleActionClick}"
-              icon="mdi:volume-mute"
-              title="Mute"
-            ></paper-icon-button>
-          </div>
+        <div class="row"> // First row
+          <paper-icon-button 
+            .action="${"power"}" 
+            @click="${this.handleActionClick}" 
+            icon="mdi:power"
+            title="Power"
+          />
           
-          <div class="row">
-            <paper-icon-button
-              .action="${"source_tv"}"
-              @click="${this.handleActionClick}"
-              icon="mdi:television-classic"
-              title="TV"
-            ></paper-icon-button>
-            
-            <paper-icon-button
-              .action="${"source_smart"}"
-              @click="${this.handleActionClick}"
-              icon="mdi:television-guide"
-              title="Smart"
-            ></paper-icon-button>
-
-          </div>
-
-          <div class="row">
-            <paper-icon-button
-              .action="${"volume_down"}"
-              @click="${this.handleActionClick}"
-              icon="mdi:volume-medium"
-              title="Volume -"
-            ></paper-icon-button>
-            <paper-icon-button
-              .action="${""}"
-              @click="${this.handleActionClick}"
-              icon=""
-              title=""
-            ></paper-icon-button>
-            <paper-icon-button
-              .action="${"volume_up"}"
-              @click="${this.handleActionClick}"
-              icon="mdi:volume-high"
-              title="Volume +"
-            ></paper-icon-button>
-          </div>
+          <paper-icon-button
+            .action="${"source_tv"}"
+            @click="${this.handleActionClick}"
+            icon="mdi:television-classic"
+            title="TV"
+          />
           
-          <div class="row">
-            <paper-icon-button
-              .action="${"screen_size"}"
-              @click="${this.handleActionClick}"
-              icon="mdi:resize"
-              title="Size"
-            ></paper-icon-button>
-            <paper-icon-button
-              .action="${""}"
-              @click="${this.handleActionClick}"
-              icon=""
-              title=""
-            ></paper-icon-button>
-            <paper-icon-button
-              .action="${"screen_brightness"}"
-              @click="${this.handleActionClick}"
-              icon="mdi:brightness-6"
-              title="Brightness"
-            ></paper-icon-button>
-          </div>
+          <paper-icon-button
+            .action="${"source_smart"}"
+            @click="${this.handleActionClick}"
+            icon="mdi:television-guide"
+            title="Smart"
+          />        
         </div>
+
+        <div class="row">
+          <paper-icon-button
+            .action="${"volume_down"}"
+            @click="${this.handleActionClick}"
+            icon="mdi:volume-medium"
+            title="Volume -"
+          />
+          <paper-icon-button
+            .action="${"volume_up"}"
+            @click="${this.handleActionClick}"
+            icon="mdi:volume-high"
+            title="Volume +"
+          ></paper-icon-button>
+          <paper-icon-button
+            .action="${"mute"}"
+            @click="${this.handleActionClick}"
+            icon="mdi:volume-mute"
+            title="Mute"
+          />
+        </div>
+        
+        <div class="row">
+          <paper-icon-button
+            .action="${"screen_size"}"
+            @click="${this.handleActionClick}"
+            icon="mdi:resize"
+            title="Size"
+          ></paper-icon-button>
+          <paper-icon-button
+            .action="${""}"
+            @click="${this.handleActionClick}"
+            icon=""
+            title=""
+          ></paper-icon-button>
+          <paper-icon-button
+            .action="${"screen_brightness"}"
+            @click="${this.handleActionClick}"
+            icon="mdi:brightness-6"
+            title="Brightness"
+          ></paper-icon-button>
+        </div>
+      </div>
       </ha-card>
     `;
   }
