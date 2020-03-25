@@ -43,27 +43,27 @@ class TVCardServices extends LitElement {
     return html`
       ${this.renderStyle()}
       <ha-card .header="${this._config.name}">
-        <div class="row"> // First row
+        <div class="row">
           <paper-icon-button 
             .action="${"power"}" 
             @click="${this.handleActionClick}" 
             icon="mdi:power"
             title="Power"
-          />
+          ></paper-icon-button>
           
           <paper-icon-button
             .action="${"source_tv"}"
             @click="${this.handleActionClick}"
             icon="mdi:television-classic"
             title="TV"
-          />
+          ></paper-icon-button>
           
           <paper-icon-button
             .action="${"source_smart"}"
             @click="${this.handleActionClick}"
             icon="mdi:television-guide"
             title="Smart"
-          />        
+          ></paper-icon-button>
         </div>
 
         <div class="row">
@@ -72,7 +72,7 @@ class TVCardServices extends LitElement {
             @click="${this.handleActionClick}"
             icon="mdi:volume-medium"
             title="Volume -"
-          />
+          ></paper-icon-button>
           <paper-icon-button
             .action="${"volume_up"}"
             @click="${this.handleActionClick}"
@@ -84,7 +84,7 @@ class TVCardServices extends LitElement {
             @click="${this.handleActionClick}"
             icon="mdi:volume-mute"
             title="Mute"
-          />
+          ></paper-icon-button>
         </div>
         
         <div class="row">
