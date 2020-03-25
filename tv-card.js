@@ -43,6 +43,7 @@ class TVCardServices extends LitElement {
     return html`
       ${this.renderStyle()}
       <ha-card .header="${this._config.name}">
+        <div class="row"></div>
         <div class="row">
           <paper-icon-button 
             .action="${"power"}" 
