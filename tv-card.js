@@ -45,68 +45,68 @@ class TVCardServices extends LitElement {
       <ha-card .header="${this._config.name}">
         <div class="row"></div>
         <div class="row">
-          <paper-icon-button 
+          <ha-icon-button 
             .action="${"power"}" 
             @click="${this.handleActionClick}" 
             icon="mdi:power"
             title="Power"
-          ></paper-icon-button>
+          ></ha-icon-button>
           
-          <paper-icon-button
+          <ha-icon-button
             .action="${"source_tv"}"
             @click="${this.handleActionClick}"
             icon="mdi:television-classic"
             title="TV"
-          ></paper-icon-button>
+          ></ha-icon-button>
           
-          <paper-icon-button
+          <ha-icon-button
             .action="${"source_smart"}"
             @click="${this.handleActionClick}"
             icon="mdi:television-guide"
             title="Smart"
-          ></paper-icon-button>
+          ></ha-icon-button>
         </div>
 
         <div class="row">
-          <paper-icon-button
+          <ha-icon-button
             .action="${"volume_down"}"
             @click="${this.handleActionClick}"
             icon="mdi:volume-medium"
             title="Volume -"
-          ></paper-icon-button>
-          <paper-icon-button
+          ></ha-icon-button>
+          <ha-icon-button
             .action="${"volume_up"}"
             @click="${this.handleActionClick}"
             icon="mdi:volume-high"
             title="Volume +"
-          ></paper-icon-button>
-          <paper-icon-button
+          ></ha-icon-button>
+          <ha-icon-button
             .action="${"mute"}"
             @click="${this.handleActionClick}"
             icon="mdi:volume-mute"
             title="Mute"
-          ></paper-icon-button>
+          ></ha-icon-button>
         </div>
         
         <div class="row">
-          <paper-icon-button
+          <ha-icon-button
             .action="${"screen_size"}"
             @click="${this.handleActionClick}"
             icon="mdi:resize"
             title="Size"
-          ></paper-icon-button>
-          <paper-icon-button
+          ></ha-icon-button>
+          <ha-icon-button
             .action="${""}"
             @click="${this.handleActionClick}"
             icon=""
             title=""
-          ></paper-icon-button>
-          <paper-icon-button
+          ></ha-icon-button>
+          <ha-icon-button
             .action="${"screen_brightness"}"
             @click="${this.handleActionClick}"
             icon="mdi:brightness-6"
             title="Brightness"
-          ></paper-icon-button>
+          ></ha-icon-button>
         </div>
       </div>
       </ha-card>
@@ -131,7 +131,7 @@ class TVCardServices extends LitElement {
           padding: 16px 0px 16px 0px;
         }
         img,
-        paper-icon-button {
+        ha-icon-button {
           width: 64px;
           height: 64px;
           cursor: pointer;
